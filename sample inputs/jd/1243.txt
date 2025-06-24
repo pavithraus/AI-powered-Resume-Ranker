@@ -1,0 +1,49 @@
+Job Title: Data Scientist
+Location: Remote / Bangalore, India
+Job Type: Full-Time
+Job Summary:
+We are looking for a highly motivated and skilled Data Scientist to join our analytics team. The ideal candidate will be responsible for collecting, analyzing, and interpreting large datasets to identify patterns, trends, and actionable insights to support data-driven decision making.
+
+Responsibilities:
+Analyze large datasets to extract meaningful insights.
+
+Design and build predictive models and machine learning algorithms.
+
+Clean, prepare, and validate data for analysis.
+
+Present data-driven insights to stakeholders using visualization tools.
+
+Collaborate with product, engineering, and business teams.
+
+Conduct A/B testing and statistical analysis to support business initiatives.
+
+Deploy models into production and monitor performance.
+
+Required Skills:
+Strong knowledge of Python (NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn).
+
+Hands-on experience with Machine Learning algorithms (regression, classification, clustering, etc.).
+
+Experience with SQL and relational databases.
+
+Knowledge of data preprocessing, feature engineering, and model evaluation metrics.
+
+Familiarity with big data technologies (Spark, Hadoop) is a plus.
+
+Experience with cloud platforms (AWS, GCP, or Azure) is a plus.
+
+Excellent problem-solving and analytical skills.
+
+Strong communication skills to explain technical results to non-technical stakeholders.
+
+Qualifications:
+Bachelor’s or Master’s degree in Computer Science, Data Science, Statistics, Mathematics, or a related field.
+
+1-3 years of professional experience in data science or a similar role (freshers with strong portfolios are also considered).
+
+Nice to Have:
+Experience with deep learning frameworks like TensorFlow, Keras, or PyTorch.
+
+Knowledge of NLP, time-series forecasting, or recommendation systems.
+
+Exposure to BI tools like Power BI, Tableau, or Looker.
