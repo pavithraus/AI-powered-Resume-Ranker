@@ -1,0 +1,46 @@
+Job Title: Junior Data Analyst
+Location: Remote / Chennai / Bangalore (Flexible)
+Job Type: Full-Time | Entry-Level
+
+Job Summary:
+We are looking for an enthusiastic and detail-oriented Junior Data Analyst to join our analytics team. The ideal candidate will be responsible for conducting data analysis, developing interactive dashboards, and presenting insights using modern analytics tools. Fresh graduates with hands-on academic and personal project experience in Python, Excel, and Tableau are highly encouraged to apply.
+
+Responsibilities:
+Perform exploratory data analysis (EDA) using Python (Pandas, Matplotlib).
+
+Create interactive dashboards using Tableau, Power BI, and MS Excel.
+
+Clean and prepare datasets for analysis.
+
+Collaborate with teams to understand business needs and provide data-driven solutions.
+
+Present analytical findings and data stories to both technical and non-technical stakeholders.
+
+Manage and version-control code using GitHub and Jupyter Notebook.
+
+Required Skills:
+Programming: Python, R, Java, C
+
+Data Tools: Pandas, Matplotlib, MS Excel
+
+BI & Visualization: Tableau, Power BI, Dashboards
+
+Software Tools: Jupyter Notebook, GitHub, MS Office
+
+Qualifications: 
+
+B.Sc,M.Sc.(compuet science,satistics,Data Science) 
+
+Strong academic background with project-based learning and real-world dashboard creation
+
+Certifications in Fundamentals and Advanced Data Analytics using Tableau 
+  
+Experience:
+1-3 years experience in analyst or datascience role.
+  
+Soft Skills:
+Strong communication and storytelling abilities
+
+Excellent problem-solving and logical thinking
+
+Willingness to learn and adapt in a fast-paced environment
