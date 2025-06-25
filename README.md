@@ -4,7 +4,7 @@ Transforming Hiring with Smarter Resume Insights
 
 <p align="center">
     <img src="https://img.shields.io/github/last-commit/pavithraus/AI-powered-Resume-Ranker?style=flat-square" alt="Last Commit">
-    <img src="https://img.shields.io/github/languages/top/pavithraus/AI-powered-Resume-Rankero?color=blue&style=flat-square" alt="Top Language">
+    <img src="https://img.shields.io/github/languages/top/pavithraus/AI-powered-Resume-Ranker?color=blue&style=flat-square" alt="Top Language">
     <img src="https://img.shields.io/github/languages/count/pavithraus/AI-powered-Resume-Ranker?style=flat-square" alt="Language Count">
 </p>
 
@@ -23,13 +23,14 @@ Transforming Hiring with Smarter Resume Insights
 
 ---
 
-AI-Powered Resume Ranker is a web-based intelligent system that automatically ranks resumes based on a given job description using NLP techniques.  
-The system analyzes key factors like **similarity score, keyword match, experience, education, and skills** to provide an accurate resume ranking.  
+**AI-Powered Resume Ranker is a web-based intelligent system that automatically ranks resumes based on a given job description using NLP techniques.  
+The system analyzes key factors like **similarity score, keyword match, experience, education, and skills** to provide an accurate resume ranking.**
 
 ---
 
 ## 🎯 Objective
-- Automate the resume shortlisting process.
+
+- Automate the resume shortlisting  process.
 - Match candidates to job descriptions efficiently.
 - Reduce manual effort in resume screening.
 - Provide a transparent, multi-factor scoring system.
@@ -37,31 +38,31 @@ The system analyzes key factors like **similarity score, keyword match, experien
 ---
 
 ## 🛠️ Tools & Technologies
+
 - **Frontend:** HTML, CSS, Bootstrap
 - **Backend:** Python, Flask
 - **NLP:** spaCy, FuzzyWuzzy
 - **Similarity Scoring:** TF-IDF, Cosine Similarity
 - **PDF Parsing:** PyPDF2
-- **Data Visualization:** Custom Circular Progress Charts
+- **Data Visualization:** Custom Bar Progress Charts
 - **Export:** Pandas (Excel Report)
 
 ---
 
 ## ⚙️ Workflow
 
-```plaintext
 User Uploads Resume(s) + Job Description
-           ⬇️
+           ⬇
 Preprocess and Extract Text
-           ⬇️
+           ⬇
 Keyword Extraction & Skill Matching
-           ⬇️
+           ⬇
 TF-IDF Similarity Calculation
-           ⬇️
+           ⬇
 Experience & Education Scoring
-           ⬇️
+           ⬇
 Final Score Calculation and Ranking
-           ⬇️
+           ⬇
 Display Detailed Results + Export Option
 
 ----
