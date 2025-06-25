@@ -1,6 +1,6 @@
 ### 🚀 **AI-POWERED-RESUME-RANKER**
 
-`Transforming Hiring with Smarter Resume Insights`
+`Transforming Hiring with Smarter Resume Insights
 
 <p align="center">
     <img src="https://img.shields.io/github/last-commit/pavithraus/AI-powered-Resume-Ranker?style=flat-square" alt="Last Commit">
