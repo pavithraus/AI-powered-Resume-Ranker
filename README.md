@@ -1,4 +1,4 @@
-####🚀 **AI-POWERED-RESUME-RANKER**
+### 🚀 **AI-POWERED-RESUME-RANKER**
 
 Transforming Hiring with Smarter Resume Insights
 
