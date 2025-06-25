@@ -46,11 +46,11 @@ Open your browser and go to: http://localhost:5000
 - API endpoint for integration
 
 ## Scoring Algorithm:
-- TF-IDF Similarity: 15%
+- TF-IDF Similarity: 25%
 - Keyword Matching: 20%
 - Experience Score: 20%
 - Education Score: 15%
-- Technical Skills: 30%
+- Technical Skills: 20%
 
 ## File Structure:
 resume_ranker/
