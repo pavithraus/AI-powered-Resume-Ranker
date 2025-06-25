@@ -5,6 +5,7 @@ Transforming Hiring with Smarter Resume Insights
 <p align="center">
     <img src="https://img.shields.io/github/last-commit/pavithraus/AI-powered-Resume-Ranker?style=flat-square" alt="Last Commit">
     <img src="https://img.shields.io/github/languages/top/pavithraus/AI-powered-Resume-Ranker?color=blue&style=flat-square" alt="Top Language">
+      <img src="https://img.shields.io/github/languages/top/pavithraus/AI-powered-Resume-Ranker?color=blue&style=flat-square" alt="Language">
     <img src="https://img.shields.io/github/languages/count/pavithraus/AI-powered-Resume-Ranker?style=flat-square" alt="Language Count">
 </p>
 
@@ -52,51 +53,82 @@ The system analyzes key factors like **similarity score, keyword match, experien
 ## ⚙️ Workflow
 
 User Uploads Resume(s) + Job Description
+
            ⬇
 Preprocess and Extract Text
+
            ⬇
+           
 Keyword Extraction & Skill Matching
+
            ⬇
+           
 TF-IDF Similarity Calculation
+
            ⬇
+           
 Experience & Education Scoring
+
            ⬇
+           
 Final Score Calculation and Ranking
+
            ⬇
+           
 Display Detailed Results + Export Option
 
 ----
 
 ## 🖼️ Application Preview
 
-📌 Home Page
+**📌 Home Page**
 
 ![home page](https://github.com/user-attachments/assets/af9e9395-dbc8-472d-83d2-d615eec59b8c)
 
 
-📂 Input Page (Upload Resume & Job Description)
+**📂 Input Page** (Upload Resume & Job Description)
 
 ![input](https://github.com/user-attachments/assets/b9d21560-bead-4031-9e53-50410c7d0237)
 
 
-📊 Result Page (Ranked Resumes with bar Meters)
+**📊 Result Page** (Ranked Resumes with bar Meters)
+
 ![result](https://github.com/user-attachments/assets/82aa5b17-913c-45bb-aef8-8cf06e3f6fca)
+
 ![result1](https://github.com/user-attachments/assets/466890c3-27a2-41d6-a42b-9f50a7d5e6c9)
+
 ![result2](https://github.com/user-attachments/assets/0f950ba1-7844-4fe3-99cd-c518e82b1fc6)
 
+---
 
-🚀 Features
+## 🚀 Features
 
-Upload single or multiple resumes for batch processing.
+- Upload single or multiple resumes for batch processing.
 
-Compare resumes with single or multiple scoring consistency.
+- Compare resumes with single or multiple scoring consistency.
 
-Uses TF-IDF based similarity.
+- Uses TF-IDF based similarity.
 
-Calculates experience, education, skill, and keyword match.
+- Calculates experience, education, skill, and keyword match.
 
-Displays bar progress meters for visual scoring.
+- Displays bar progress meters for visual scoring.
 
-Generates and downloads Excel reports.
+- Generates and downloads Excel reports.
 
+----
 
+## ✅ Conclusion
+
+The AI-Powered Resume Ranker is a smart, efficient tool designed to automate the resume screening process. By leveraging TF-IDF similarity, keyword matching, and experience-based scoring, 
+
+it ensures fair and consistent evaluation of resumes whether processed individually or in batches With visual insights using circular progress charts, easy multi-resume upload, 
+
+and Excel report generation, this application makes resume ranking faster, more transparent, and more reliable.
+
+This project serves as a solid foundation for further advancements like:
+
+Integrating BERT-based semantic scoring
+
+Adding real-time feedback for resume improvements
+
+Connecting with job portals and HR systems.
