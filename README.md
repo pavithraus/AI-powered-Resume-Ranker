@@ -5,7 +5,7 @@ Transforming Hiring with Smarter Resume Insights
 <p align="center">
     <img src="https://img.shields.io/github/last-commit/pavithraus/AI-powered-Resume-Ranker?style=flat-square" alt="Last Commit">
     <img src="https://img.shields.io/github/languages/top/pavithraus/AI-powered-Resume-Ranker?color=blue&style=flat-square" alt="Top Language">
-      <img src="https://img.shields.io/github/languages/top/pavithraus/AI-powered-Resume-Ranker?color=blue&style=flat-square" alt="Language">
+    <img src="https://img.shields.io/github/languages/top/pavithraus/AI-powered-Resume-Ranker?color=blue&style=flat-square" alt="GitHub language stats">
     <img src="https://img.shields.io/github/languages/count/pavithraus/AI-powered-Resume-Ranker?style=flat-square" alt="Language Count">
 </p>
 
@@ -53,27 +53,27 @@ The system analyzes key factors like **similarity score, keyword match, experien
 ## ⚙️ Workflow
 
 User Uploads Resume(s) + Job Description
-
-           ⬇
+ 
+           |          
 Preprocess and Extract Text
 
-           ⬇
+           |
            
 Keyword Extraction & Skill Matching
 
-           ⬇
+           |
            
 TF-IDF Similarity Calculation
 
-           ⬇
+           |
            
 Experience & Education Scoring
 
-           ⬇
+           |
            
 Final Score Calculation and Ranking
 
-           ⬇
+           |
            
 Display Detailed Results + Export Option
 
