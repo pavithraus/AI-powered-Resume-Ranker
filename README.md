@@ -5,7 +5,7 @@
 <p align="center">
     <img src="https://img.shields.io/github/last-commit/pavithraus/AI-powered-Resume-Ranker?style=flat-square" alt="Last Commit">
     <img src="https://img.shields.io/github/languages/top/pavithraus/AI-powered-Resume-Ranker?color=blue&style=flat-square" alt="Language">
-    <img src="https://img.shields.io/badge/minor%20language-43.1-blue?style=flat-square" alt="Python">
+    <img src="https://img.shields.io/badge/python%20-43.1-blue?style=flat-square" alt="Python">
     <img src="https://img.shields.io/github/languages/count/pavithraus/AI-powered-Resume-Ranker?style=flat-square" alt="Language Count">
 </p>
 
