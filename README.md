@@ -8,7 +8,7 @@ Transforming Hiring with Smarter Resume Insights
     <img src="https://img.shields.io/github/languages/count/pavithraus/AI-powered-Resume-Ranker?style=flat-square" alt="Language Count">
 </p>
 
----
+----
 
 ### Built with the tools and technologies:
 <p>
