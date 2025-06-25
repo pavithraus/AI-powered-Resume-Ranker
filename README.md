@@ -4,7 +4,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/github/last-commit/pavithraus/AI-powered-Resume-Ranker?style=flat-square" alt="Last Commit">
-    <img src="https://img.shields.io/github/languages/top/pavithraus/AI-powered-Resume-Ranker?color=blue&style=flat-square" alt="Top Language">
+    <img src="https://img.shields.io/github/languages/top/pavithraus/AI-powered-Resume-Ranker?color=blue&style=flat-square" alt="Language">
     <img src="https://img.shields.io/github/languages/count/pavithraus/AI-powered-Resume-Ranker?style=flat-square" alt="Language Count">
 </p>
 
@@ -71,9 +71,6 @@ The system analyzes key factors like **similarity score, keyword match, experien
 
 ![result](https://github.com/user-attachments/assets/82aa5b17-913c-45bb-aef8-8cf06e3f6fca)
 
-![result1](https://github.com/user-attachments/assets/466890c3-27a2-41d6-a42b-9f50a7d5e6c9)
-
-![result2](https://github.com/user-attachments/assets/0f950ba1-7844-4fe3-99cd-c518e82b1fc6)
 
 ---
 
