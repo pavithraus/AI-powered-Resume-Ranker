@@ -1,0 +1,11 @@
+filename,final_score,tfidf_score,keyword_score,experience_score,education_score,skills_score,matched_keywords
+125.pdf,60.51,14.18,50,100,83,72.58,"['science', 'team', 'project', 'tools', 'data', 'pandas', 'skills', 'excel', 'analysis', 'matplotlib']"
+128.pdf,58.19,20.8,51.67,72,83,79.03,"['science', 'team', 'tools', 'data', 'pandas', 'skills', 'excel', 'analysis', 'matplotlib', 'tableau']"
+127.pdf,53.62,19.34,51.67,51,83,79.03,"['science', 'team', 'tools', 'data', 'pandas', 'skills', 'excel', 'analysis', 'matplotlib', 'tableau']"
+12011623.pdf,52.46,15.75,45,80,88,51.61,"['analyst', 'science', 'team', 'project', 'data', 'pandas', 'skills', 'technical', 'analysis', 'tableau']"
+11890896.pdf,45.44,7.99,36.67,100,73,25.81,"['analyst', 'science', 'team', 'project', 'tools', 'data', 'skills', 'technical', 'analysis', 'analytic']"
+10553553.pdf,42.4,3.79,28.33,100,73,24.19,"['science', 'team', 'project', 'data', 'skills', 'technical', 'analysis', 'experience']"
+124.pdf,41.45,20.69,51.67,40,25,70.97,"['science', 'github', 'job', 'team', 'tools', 'data', 'pandas', 'skills', 'matplotlib', 'tableau']"
+123.pdf,41.22,19.76,51.67,40,25,70.97,"['science', 'github', 'job', 'team', 'tools', 'data', 'pandas', 'skills', 'matplotlib', 'tableau']"
+11677012.pdf,38.99,3.94,10,100,68,29.03,"['team', 'skills', 'experience']"
+10985403.pdf,31.55,6.54,21.67,40,100,12.9,"['project', 'data', 'skills', 'analysis', 'power', 'experience']"

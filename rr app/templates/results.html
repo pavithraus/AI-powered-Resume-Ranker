@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h2 class="h3 mb-1">Resume Rankings</h2>
+                <p class="text-muted mb-0">{{ results|length }} candidates analyzed</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    {% for result in results %}
+    <div class="col-lg-6 mb-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                    <div>
+                        <h6 class="mb-1" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" style="display: contents";>{{ result.filename }}</h6>
+                        <small class="text-muted">Rank #{{ loop.index }}</small>
+                    </div>
+                    <span class="badge fs-6 px-3 py-2
+                        {% if result.final_score >= 60 %}bg-success
+                        {% elif result.final_score >= 50 %}bg-danger
+                        {% else %}bg-secondary
+                        {% endif %}">
+                        {{ result.final_score }}%
+                    </span>
+                </div>
+
+                <div class="row g-3 mb-3">
+                    <div class="col-6">
+                        <div class="d-flex justify-content-between">
+                            <small>Similarity</small>
+                            <small class="fw-medium">{{ result.tfidf_score }}%</small>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary progress-tfidf"></div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex justify-content-between">
+                            <small>Keywords</small>
+                            <small class="fw-medium">{{ result.keyword_score }}%</small>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info progress-keyword"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-3">
+                    <div class="col-4">
+                        <div class="d-flex justify-content-between">
+                            <small>Experience</small>
+                            <small class="fw-medium">{{ result.experience_score }}%</small>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning progress-experience"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex justify-content-between">
+                            <small>Education</small>  
+                            <small class="fw-medium">{{ result.education_score }}%</small>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success progress-education"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex justify-content-between">
+                            <small>Skills</small>
+                            <small class="fw-medium">{{ result.skills_score }}%</small>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger progress-skills"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-data" style="display: none;"
+                     data-tfidf="{{ result.tfidf_score }}"
+                     data-keyword="{{ result.keyword_score }}"
+                     data-experience="{{ result.experience_score }}"
+                     data-education="{{ result.education_score }}"
+                     data-skills="{{ result.skills_score }}">
+                </div>
+
+                {% if result.matched_keywords %}
+                <div class="mt-3">
+                    <small class="text-muted d-block mb-2">Key Matches:</small>
+                    {% for keyword in result.matched_keywords[:8] %}
+                        <span class="badge bg-light text-dark me-1 mb-1">{{ keyword }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6 class="mb-3">Analysis Summary</h6>
+                <div class="row text-center">
+                    <div class="col-3">
+                        <div class="h4 text-primary">{{ results|length }}</div>
+                        <small class="text-muted">Total</small>
+                    </div>
+                    <div class="col-3">
+                        <div class="h4 text-info">{{ "%.0f"|format(results|map(attribute='final_score')|sum / results|length) }}%</div>
+                        <small class="text-muted">Average</small>
+                    </div>
+                    <div class="col-3">
+                        <div class="h4 text-warning">{{ results[0].final_score }}%</div>
+                        <small class="text-muted">Best Score</small>
+                    </div>
+                    <div class="col-3">
+                        <div class="h4 text-success">{{ (results|selectattr('final_score', '>=', 70)|list|length) }}</div>
+                        <small class="text-muted">Qualified</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <a href="/download_report" class="btn btn-outline-primary">
+                <i class="fas fa-download me-2"></i>Export Report
+    </a>
+    <a href="/" class="btn btn-outline-primary">
+        <i class="fas fa-plus me-2"></i>New Analysis
+    </a>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const resumeCards = document.querySelectorAll('.resume-data');
+    
+    resumeCards.forEach(function(dataDiv) {
+        const card = dataDiv.closest('.card');
+        const tfidfScore = dataDiv.dataset.tfidf;
+        const keywordScore = dataDiv.dataset.keyword;
+        const experienceScore = dataDiv.dataset.experience;
+        const educationScore = dataDiv.dataset.education;
+        const skillsScore = dataDiv.dataset.skills;
+        
+        card.querySelector('.progress-tfidf').style.width = tfidfScore + '%';
+        card.querySelector('.progress-keyword').style.width = keywordScore + '%';
+        card.querySelector('.progress-experience').style.width = experienceScore + '%';
+        card.querySelector('.progress-education').style.width = educationScore + '%';
+        card.querySelector('.progress-skills').style.width = skillsScore + '%';
+    });
+});
+</script>
+{% endblock %}

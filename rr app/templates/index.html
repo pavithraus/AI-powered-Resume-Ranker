@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="text-center mb-0">
+            <h1 class="h2 mb-3" style="font-weight: bolder">Smart Resume Analysis</h1>
+            <p class="text-muted">Upload job description and resumes to get intelligent rankings</p>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-body p-4">
+                <form method="POST" action="/upload" enctype="multipart/form-data">
+                    <div class="mb-4" style="font-weight: bolder;">
+                        <label class="form-label fw-medium">Job Description</label>
+                        <textarea class="form-control" name="job_description" rows="6" required 
+                                  placeholder="Paste the complete job description here..."></textarea>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="form-label fw-medium" style="font-weight: bolder;">Resume Files (PDF)</label>
+                        <div class="file-drop">
+                            <input type="file" class="form-control" name="resumes" 
+                                   multiple accept=".pdf" required style="display: none;" id="fileInput">
+                            <i class="fas fa-cloud-upload-alt fa-2x text-muted mb-3"></i>
+                            <p class="mb-0">
+                                <button type="button" class="btn btn-outline-primary btn-sm" onclick="document.getElementById('fileInput').click()">
+                                    Choose Files
+                                </button>
+                            </p>
+                            <small class="text-muted">Select multiple PDF files (max 16MB each)</small>
+                            <div id="fileList" class="mt-2"></div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success btn-lg w-100">
+                        <i class="fas fa-magic me-2"></i>Analyze Resumes
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <h6 class="mb-3"></h6>
+                <div class="row g-3">
+                    <div class="col-md-3 text-center">
+                        <i class="fas fa-search fa-2x text-success mb-2"></i>
+                        <small class="d-block">NLP Analysis</small>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <i class="fas fa-vector-square fa-2x text-primary mb-2"></i>
+                        <small class="d-block">TF-IDF Scoring</small>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <i class="fas fa-chart-line fa-2x text-danger mb-2"></i>
+                        <small class="d-block">Multi-factor Match</small>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <i class="fas fa-trophy fa-2x text-warning mb-2"></i>
+                        <small class="d-block">Smart Ranking</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.getElementById('fileInput').addEventListener('change', function(e) {
+    const files = e.target.files;
+    const fileList = document.getElementById('fileList');
+    const dropArea = document.querySelector('.file-drop');
+    
+    if (files.length > 0) {
+        dropArea.style.borderColor = '#10b982';
+        dropArea.style.backgroundColor = '#f0fdf5';
+        
+        fileList.innerHTML = `<div class="alert alert-success py-2 mt-3">
+            <i class="fas fa-check me-2"></i>${files.length} file(s) selected
+        </div>`;
+    }
+});
+</script>
+{% endblock %}
